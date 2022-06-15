@@ -14,6 +14,8 @@ struct PageControl: UIViewRepresentable {
 
     func makeUIView(context: Context) -> UIPageControl {
         let control = UIPageControl()
+        control.pageIndicatorTintColor = .black
+        control.currentPageIndicatorTintColor = .white
         control.numberOfPages = numberOfPages
         control.addTarget(
             context.coordinator,

@@ -7,16 +7,16 @@
 
 import SwiftUI
 
-struct PageView: View {
-    var imageName: String
-//    @State private var currentPage = 0
+struct PageView<Page: View>: View {
+    var pages: [Page]
+    @State private var currentPage = 0
 
     var body: some View {
-        VStack {
-            Image(imageName)
-                .resizable()
-            
-//            Text("Current Page: \(currentPage)")
+        ZStack(alignment: .bottom) {
+            PageViewController(pages: pages, currentPage: $currentPage)
+            PageControl(numberOfPages: pages.count, currentPage: $currentPage)
+                .frame(width: CGFloat(pages.count * 18))
+                .padding(.trailing)
         }
     }
 }
