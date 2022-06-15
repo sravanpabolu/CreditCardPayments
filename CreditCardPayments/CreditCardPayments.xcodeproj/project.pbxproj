@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A066EF292850C2CD009D6537 /* CreditCardPaymentsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066EF282850C2CD009D6537 /* CreditCardPaymentsApp.swift */; };
-		A066EF2B2850C2CD009D6537 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066EF2A2850C2CD009D6537 /* ContentView.swift */; };
 		A066EF2D2850C2CF009D6537 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A066EF2C2850C2CF009D6537 /* Assets.xcassets */; };
 		A066EF302850C2CF009D6537 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A066EF2F2850C2CF009D6537 /* Preview Assets.xcassets */; };
 		A08FF02B2859B7FE00BA9B67 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08FF02A2859B7FE00BA9B67 /* PageViewController.swift */; };
@@ -21,7 +20,6 @@
 /* Begin PBXFileReference section */
 		A066EF252850C2CD009D6537 /* CreditCardPayments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreditCardPayments.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A066EF282850C2CD009D6537 /* CreditCardPaymentsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardPaymentsApp.swift; sourceTree = "<group>"; };
-		A066EF2A2850C2CD009D6537 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A066EF2C2850C2CF009D6537 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A066EF2F2850C2CF009D6537 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A08FF02A2859B7FE00BA9B67 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
@@ -63,7 +61,6 @@
 			children = (
 				A0F038732859A67A0079E888 /* Onboarding */,
 				A066EF282850C2CD009D6537 /* CreditCardPaymentsApp.swift */,
-				A066EF2A2850C2CD009D6537 /* ContentView.swift */,
 				A066EF2C2850C2CF009D6537 /* Assets.xcassets */,
 				A066EF2E2850C2CF009D6537 /* Preview Content */,
 			);
@@ -161,7 +158,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A08FF02D2859B87200BA9B67 /* PageView.swift in Sources */,
-				A066EF2B2850C2CD009D6537 /* ContentView.swift in Sources */,
 				A08FF02F2859BEC000BA9B67 /* PageControl.swift in Sources */,
 				A0F038752859A8040079E888 /* OnboardingView.swift in Sources */,
 				A08FF0312859C24E00BA9B67 /* Page.swift in Sources */,
