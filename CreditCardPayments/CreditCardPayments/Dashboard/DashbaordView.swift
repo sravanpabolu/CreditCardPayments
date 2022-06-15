@@ -29,7 +29,7 @@ struct DashbaordView: View {
                 
                 Spacer()
             } else {
-                Text("Not support below iOS 15")
+                Text(TextError.shared.below15)
             }
         }
     }
@@ -54,7 +54,7 @@ struct DashbaordView: View {
                         })
                 }
             }else{
-                Text("Not support below iOS 15")
+                Text(TextError.shared.below15)
             }
         }
     }
@@ -117,7 +117,7 @@ struct OutStandingView : View{
                     .fontWeight(.regular)
                     .foregroundColor(Color.blue)
             } else {
-                Text("Not support below iOS 15")
+                Text(TextError.shared.below15)
             }
         }
     }
@@ -149,7 +149,7 @@ struct AvailableLimitView : View{
                 .font(.caption)
                 .foregroundColor(Color.white)
             } else {
-                Text("Not support below iOS 15")
+                Text(TextError.shared.below15)
             }
         }
         .onAppear(perform: {
@@ -171,7 +171,7 @@ struct StateMentGeneratedView : View{
                     .background(Color.cyan)
                     .cornerRadius(8)
             } else {
-                Text("Not support below iOS 15")
+                Text(TextError.shared.below15)
             }
             
             VStack(alignment:.leading){
@@ -228,4 +228,10 @@ struct DashbaorView_Previews: PreviewProvider {
             DashbaordView()
         }
     }
+}
+
+
+struct TextError {
+    static var shared = TextError()
+    var below15 = "Not support below iOS 15"
 }

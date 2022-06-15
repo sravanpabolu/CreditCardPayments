@@ -60,7 +60,7 @@ struct RecentTranscationsCell: View {
                 }
             }
             else {
-                Text("Not support below iOS 15")
+                Text(TextError.shared.below15)
             }
         }
         .padding(.vertical)
@@ -72,3 +72,4 @@ struct RecentTranscationsCell_Previews: PreviewProvider {
         RecentTranscationsCell()
     }
 }
+
