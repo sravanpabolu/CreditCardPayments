@@ -11,6 +11,7 @@
 		A066EF2B2850C2CD009D6537 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066EF2A2850C2CD009D6537 /* ContentView.swift */; };
 		A066EF2D2850C2CF009D6537 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A066EF2C2850C2CF009D6537 /* Assets.xcassets */; };
 		A066EF302850C2CF009D6537 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A066EF2F2850C2CF009D6537 /* Preview Assets.xcassets */; };
+		A0F038752859A8040079E888 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F038742859A8040079E888 /* OnboardingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		A066EF2A2850C2CD009D6537 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A066EF2C2850C2CF009D6537 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A066EF2F2850C2CF009D6537 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A0F038742859A8040079E888 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		A066EF272850C2CD009D6537 /* CreditCardPayments */ = {
 			isa = PBXGroup;
 			children = (
+				A0F038732859A67A0079E888 /* Onboarding */,
 				A066EF282850C2CD009D6537 /* CreditCardPaymentsApp.swift */,
 				A066EF2A2850C2CD009D6537 /* ContentView.swift */,
 				A066EF2C2850C2CF009D6537 /* Assets.xcassets */,
@@ -65,6 +68,14 @@
 				A066EF2F2850C2CF009D6537 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A0F038732859A67A0079E888 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				A0F038742859A8040079E888 /* OnboardingView.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A066EF2B2850C2CD009D6537 /* ContentView.swift in Sources */,
+				A0F038752859A8040079E888 /* OnboardingView.swift in Sources */,
 				A066EF292850C2CD009D6537 /* CreditCardPaymentsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
