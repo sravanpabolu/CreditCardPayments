@@ -11,7 +11,7 @@ import SwiftUI
 struct CreditCardPaymentsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            OnboardingView()
         }
     }
 }
