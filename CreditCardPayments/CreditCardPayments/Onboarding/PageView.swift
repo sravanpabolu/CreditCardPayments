@@ -9,9 +9,14 @@ import SwiftUI
 
 struct PageView: View {
     var imageName: String
-    
+//    @State private var currentPage = 0
+
     var body: some View {
-        Image(imageName)
-            .resizable()
+        VStack {
+            Image(imageName)
+                .resizable()
+            
+//            Text("Current Page: \(currentPage)")
+        }
     }
 }

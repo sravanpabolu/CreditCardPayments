@@ -15,7 +15,9 @@ struct OnboardingView: View {
             PageView(imageName: "2.Intro"),
             PageView(imageName: "3.Intro"),
             PageView(imageName: "4.Intro")
-        ])
+        ],
+        currentPage: 0
+        )
     }
 }
 
