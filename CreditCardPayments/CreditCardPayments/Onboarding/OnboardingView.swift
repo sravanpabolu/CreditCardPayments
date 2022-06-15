@@ -16,6 +16,7 @@ struct OnboardingView: View {
             Page(imageName: "3.Intro"),
             Page(imageName: "4.Intro")
         ])
+        .ignoresSafeArea()
     }
 }
 
