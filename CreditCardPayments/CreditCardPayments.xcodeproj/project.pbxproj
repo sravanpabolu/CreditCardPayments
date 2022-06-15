@@ -13,6 +13,8 @@
 		A066EF302850C2CF009D6537 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A066EF2F2850C2CF009D6537 /* Preview Assets.xcassets */; };
 		A08FF02B2859B7FE00BA9B67 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08FF02A2859B7FE00BA9B67 /* PageViewController.swift */; };
 		A08FF02D2859B87200BA9B67 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08FF02C2859B87200BA9B67 /* PageView.swift */; };
+		A08FF02F2859BEC000BA9B67 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08FF02E2859BEC000BA9B67 /* PageControl.swift */; };
+		A08FF0312859C24E00BA9B67 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08FF0302859C24E00BA9B67 /* Page.swift */; };
 		A0F038752859A8040079E888 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F038742859A8040079E888 /* OnboardingView.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +26,8 @@
 		A066EF2F2850C2CF009D6537 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A08FF02A2859B7FE00BA9B67 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		A08FF02C2859B87200BA9B67 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+		A08FF02E2859BEC000BA9B67 /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
+		A08FF0302859C24E00BA9B67 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		A0F038742859A8040079E888 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +84,8 @@
 				A0F038742859A8040079E888 /* OnboardingView.swift */,
 				A08FF02A2859B7FE00BA9B67 /* PageViewController.swift */,
 				A08FF02C2859B87200BA9B67 /* PageView.swift */,
+				A08FF02E2859BEC000BA9B67 /* PageControl.swift */,
+				A08FF0302859C24E00BA9B67 /* Page.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -156,7 +162,9 @@
 			files = (
 				A08FF02D2859B87200BA9B67 /* PageView.swift in Sources */,
 				A066EF2B2850C2CD009D6537 /* ContentView.swift in Sources */,
+				A08FF02F2859BEC000BA9B67 /* PageControl.swift in Sources */,
 				A0F038752859A8040079E888 /* OnboardingView.swift in Sources */,
+				A08FF0312859C24E00BA9B67 /* Page.swift in Sources */,
 				A066EF292850C2CD009D6537 /* CreditCardPaymentsApp.swift in Sources */,
 				A08FF02B2859B7FE00BA9B67 /* PageViewController.swift in Sources */,
 			);

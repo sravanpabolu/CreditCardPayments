@@ -8,10 +8,9 @@
 import UIKit
 import SwiftUI
 
-struct PageViewController: UIViewControllerRepresentable {
-    var pages: [PageView]
-//    @Binding var currentPage: Int
-    var currentPage: Int
+struct PageViewController<Page: View>: UIViewControllerRepresentable {
+    var pages: [Page]
+    @Binding var currentPage: Int
 
     func makeUIViewController(context: Context) -> UIPageViewController {
         let pageViewController = UIPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal)
@@ -68,7 +67,6 @@ struct PageViewController: UIViewControllerRepresentable {
                let visibleViewController = pageViewController.viewControllers?.first,
                let index = controllers.firstIndex(of: visibleViewController) {
                 parent.currentPage = index
-                print(index)
             }
         }
     }

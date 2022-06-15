@@ -10,14 +10,27 @@ import UIKit
 
 struct OnboardingView: View {
     var body: some View {
-        PageViewController(pages: [
-            PageView(imageName: "1.Intro"),
-            PageView(imageName: "2.Intro"),
-            PageView(imageName: "3.Intro"),
-            PageView(imageName: "4.Intro")
-        ],
-        currentPage: 0
-        )
+        PageView(pages: [
+            Page(imageName: "1.Intro"),
+            Page(imageName: "2.Intro"),
+            Page(imageName: "3.Intro"),
+            Page(imageName: "4.Intro")
+        ])
+        
+        
+//        control.addTarget(
+//                    context.coordinator,
+//                    action: #selector(Coordinator.updateCurrentPage(sender:)),
+//                    for: .valueChanged)
+        
+//        PageViewController(pages: [
+//            PageView(imageName: "1.Intro"),
+//            PageView(imageName: "2.Intro"),
+//            PageView(imageName: "3.Intro"),
+//            PageView(imageName: "4.Intro")
+//        ],
+//        currentPage: 0
+//        )
     }
 }
 
