@@ -7,8 +7,6 @@
 
 import Foundation
 
-// First Name, Last Name, DOB, Gender, Card details, SSN (Masked)
-
 struct Constants {
     static let login = "Login"
     static let register = "Register"
@@ -19,6 +17,7 @@ struct Constants {
     static let gender = "Gender"
     static let card_details = "Card Details"
     static let ssn = "SSN"
+    static let mpin = "MPIN"
     
     static let btn_submit = "Submit"
 }

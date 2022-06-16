@@ -15,6 +15,7 @@ struct RegisterView: View {
     @State var gender: String = ""
     @State var cardDetails: String = ""
     @State var ssn: String = ""
+    @State var mpin: String = ""
     
     var body: some View {
         VStack {
@@ -34,6 +35,8 @@ struct RegisterView: View {
             CustomTextField(title: Constants.gender, iconName: "person.fill.questionmark", value: $gender)
             CustomTextField(title: Constants.card_details, iconName: "creditcard", value: $cardDetails)
             CustomTextField(title: Constants.ssn, iconName: "creditcard.viewfinder", value: $ssn)
+            
+            CustomTextField(title: Constants.mpin, iconName: "lock", value: $ssn)
             
             CustomButton(title: Constants.btn_submit) {
                 print("Submit tapped")
