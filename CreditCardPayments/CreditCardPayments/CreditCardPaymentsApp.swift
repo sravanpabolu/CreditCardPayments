@@ -12,7 +12,8 @@ struct CreditCardPaymentsApp: App {
     var body: some Scene {
         WindowGroup {
 //            OnboardingView()
-            LoginView()
+//            LoginView()
+            LoginHome()
         }
     }
 }

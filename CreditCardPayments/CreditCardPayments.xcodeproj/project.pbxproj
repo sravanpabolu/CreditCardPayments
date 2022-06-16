@@ -15,6 +15,7 @@
 		A032DE6E285BB200002D6B9D /* CustomTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A032DE6D285BB200002D6B9D /* CustomTitle.swift */; };
 		A032DE70285BB228002D6B9D /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A032DE6F285BB228002D6B9D /* CustomTextField.swift */; };
 		A032DE72285BB2CE002D6B9D /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A032DE71285BB2CE002D6B9D /* CustomButton.swift */; };
+		A032DE74285BB4F8002D6B9D /* LoginHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = A032DE73285BB4F8002D6B9D /* LoginHome.swift */; };
 		A066EF292850C2CD009D6537 /* CreditCardPaymentsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066EF282850C2CD009D6537 /* CreditCardPaymentsApp.swift */; };
 		A066EF2D2850C2CF009D6537 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A066EF2C2850C2CF009D6537 /* Assets.xcassets */; };
 		A066EF302850C2CF009D6537 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A066EF2F2850C2CF009D6537 /* Preview Assets.xcassets */; };
@@ -34,6 +35,7 @@
 		A032DE6D285BB200002D6B9D /* CustomTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTitle.swift; sourceTree = "<group>"; };
 		A032DE6F285BB228002D6B9D /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		A032DE71285BB2CE002D6B9D /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		A032DE73285BB4F8002D6B9D /* LoginHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginHome.swift; sourceTree = "<group>"; };
 		A066EF252850C2CD009D6537 /* CreditCardPayments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreditCardPayments.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A066EF282850C2CD009D6537 /* CreditCardPaymentsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardPaymentsApp.swift; sourceTree = "<group>"; };
 		A066EF2C2850C2CF009D6537 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 		A032DE5F285B96B6002D6B9D /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				A032DE73285BB4F8002D6B9D /* LoginHome.swift */,
 				A032DE60285B96C5002D6B9D /* LoginView.swift */,
 				A032DE62285B9728002D6B9D /* RegisterView.swift */,
 			);
@@ -226,6 +229,7 @@
 				A032DE63285B9728002D6B9D /* RegisterView.swift in Sources */,
 				A032DE6E285BB200002D6B9D /* CustomTitle.swift in Sources */,
 				A066EF292850C2CD009D6537 /* CreditCardPaymentsApp.swift in Sources */,
+				A032DE74285BB4F8002D6B9D /* LoginHome.swift in Sources */,
 				A08FF02B2859B7FE00BA9B67 /* PageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
