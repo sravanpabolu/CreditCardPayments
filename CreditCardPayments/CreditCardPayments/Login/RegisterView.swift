@@ -28,7 +28,6 @@ struct RegisterView: View {
     
     var registerForm: some View {
         VStack {
-            CustomTitle(title: Constants.register)
             CustomTextField(title: Constants.first_name, iconName: "person", value: $firstName)
             CustomTextField(title: Constants.last_name, iconName: "person.badge.plus", value: $lastName)
             CustomTextField(title: Constants.dob, iconName: "calendar", value: $dob)
@@ -39,7 +38,7 @@ struct RegisterView: View {
             CustomTextField(title: Constants.mpin, iconName: "lock", value: $ssn)
             
             CustomButton(title: Constants.btn_submit) {
-                print("Submit tapped")
+                print("Register - Submit tapped")
             }
         }
     }

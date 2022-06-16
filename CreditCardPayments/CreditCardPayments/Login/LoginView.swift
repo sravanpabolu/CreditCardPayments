@@ -8,8 +8,18 @@
 import SwiftUI
 
 struct LoginView: View {
+    @State var ssn: String = ""
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            CustomTextField(title: Constants.mpin, iconName: "lock", value: $ssn)
+            
+            CustomButton(title: Constants.btn_submit) {
+                print("Submit tapped")
+            }
+        }
+        .padding(EdgeInsets(top: 10, leading: 50, bottom: 10, trailing: 50))
+        .background(Color.registerScreenBGColor)
     }
 }
 
