@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A032DE61285B96C5002D6B9D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A032DE60285B96C5002D6B9D /* LoginView.swift */; };
+		A032DE63285B9728002D6B9D /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A032DE62285B9728002D6B9D /* RegisterView.swift */; };
+		A032DE66285B9876002D6B9D /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = A032DE65285B9876002D6B9D /* Font.swift */; };
+		A032DE68285BA46F002D6B9D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A032DE67285BA46F002D6B9D /* Color.swift */; };
+		A032DE6A285BA9FF002D6B9D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A032DE69285BA9FF002D6B9D /* Constants.swift */; };
+		A032DE6E285BB200002D6B9D /* CustomTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A032DE6D285BB200002D6B9D /* CustomTitle.swift */; };
+		A032DE70285BB228002D6B9D /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A032DE6F285BB228002D6B9D /* CustomTextField.swift */; };
+		A032DE72285BB2CE002D6B9D /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A032DE71285BB2CE002D6B9D /* CustomButton.swift */; };
 		A066EF292850C2CD009D6537 /* CreditCardPaymentsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066EF282850C2CD009D6537 /* CreditCardPaymentsApp.swift */; };
 		A066EF2D2850C2CF009D6537 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A066EF2C2850C2CF009D6537 /* Assets.xcassets */; };
 		A066EF302850C2CF009D6537 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A066EF2F2850C2CF009D6537 /* Preview Assets.xcassets */; };
@@ -18,6 +26,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A032DE60285B96C5002D6B9D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		A032DE62285B9728002D6B9D /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		A032DE65285B9876002D6B9D /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		A032DE67285BA46F002D6B9D /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Color.swift; path = CreditCardPayments/Extensions/Color.swift; sourceTree = SOURCE_ROOT; };
+		A032DE69285BA9FF002D6B9D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A032DE6D285BB200002D6B9D /* CustomTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTitle.swift; sourceTree = "<group>"; };
+		A032DE6F285BB228002D6B9D /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		A032DE71285BB2CE002D6B9D /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		A066EF252850C2CD009D6537 /* CreditCardPayments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreditCardPayments.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A066EF282850C2CD009D6537 /* CreditCardPaymentsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardPaymentsApp.swift; sourceTree = "<group>"; };
 		A066EF2C2850C2CF009D6537 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -40,6 +56,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A032DE5F285B96B6002D6B9D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A032DE60285B96C5002D6B9D /* LoginView.swift */,
+				A032DE62285B9728002D6B9D /* RegisterView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		A032DE64285B985F002D6B9D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A032DE65285B9876002D6B9D /* Font.swift */,
+				A032DE67285BA46F002D6B9D /* Color.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A032DE6B285BAA10002D6B9D /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				A032DE69285BA9FF002D6B9D /* Constants.swift */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		A032DE6C285BB1E7002D6B9D /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				A032DE6D285BB200002D6B9D /* CustomTitle.swift */,
+				A032DE6F285BB228002D6B9D /* CustomTextField.swift */,
+				A032DE71285BB2CE002D6B9D /* CustomButton.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
 		A066EF1C2850C2CD009D6537 = {
 			isa = PBXGroup;
 			children = (
@@ -59,6 +111,10 @@
 		A066EF272850C2CD009D6537 /* CreditCardPayments */ = {
 			isa = PBXGroup;
 			children = (
+				A032DE6C285BB1E7002D6B9D /* CustomViews */,
+				A032DE6B285BAA10002D6B9D /* Misc */,
+				A032DE64285B985F002D6B9D /* Extensions */,
+				A032DE5F285B96B6002D6B9D /* Login */,
 				A0F038732859A67A0079E888 /* Onboarding */,
 				A066EF282850C2CD009D6537 /* CreditCardPaymentsApp.swift */,
 				A066EF2C2850C2CF009D6537 /* Assets.xcassets */,
@@ -157,10 +213,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A032DE70285BB228002D6B9D /* CustomTextField.swift in Sources */,
 				A08FF02D2859B87200BA9B67 /* PageView.swift in Sources */,
+				A032DE6A285BA9FF002D6B9D /* Constants.swift in Sources */,
+				A032DE61285B96C5002D6B9D /* LoginView.swift in Sources */,
+				A032DE72285BB2CE002D6B9D /* CustomButton.swift in Sources */,
 				A08FF02F2859BEC000BA9B67 /* PageControl.swift in Sources */,
+				A032DE68285BA46F002D6B9D /* Color.swift in Sources */,
 				A0F038752859A8040079E888 /* OnboardingView.swift in Sources */,
 				A08FF0312859C24E00BA9B67 /* Page.swift in Sources */,
+				A032DE66285B9876002D6B9D /* Font.swift in Sources */,
+				A032DE63285B9728002D6B9D /* RegisterView.swift in Sources */,
+				A032DE6E285BB200002D6B9D /* CustomTitle.swift in Sources */,
 				A066EF292850C2CD009D6537 /* CreditCardPaymentsApp.swift in Sources */,
 				A08FF02B2859B7FE00BA9B67 /* PageViewController.swift in Sources */,
 			);
