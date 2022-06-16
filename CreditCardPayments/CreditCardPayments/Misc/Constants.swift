@@ -10,14 +10,12 @@ import Foundation
 struct Constants {
     static let login = "Login"
     static let register = "Register"
-    
-    static let first_name = "First Name"
-    static let last_name = "Last Name"
+    static let firstName = "First Name"
+    static let lastName = "Last Name"
     static let dob = "Date of birth"
     static let gender = "Gender"
-    static let card_details = "Card Details"
+    static let cardDetails = "Card Details"
     static let ssn = "SSN"
     static let mpin = "MPIN"
-    
-    static let btn_submit = "Submit"
+    static let btnSubmit = "Submit"
 }

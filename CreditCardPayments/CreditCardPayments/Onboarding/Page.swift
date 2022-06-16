@@ -9,7 +9,6 @@ import SwiftUI
 
 struct Page: View {
     var imageName: String
-    
     var body: some View {
         Image(imageName)
             .resizable()

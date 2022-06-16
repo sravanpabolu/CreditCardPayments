@@ -12,15 +12,19 @@ enum LoginType {
 }
 
 struct LoginHome: View {
-    
+
     init() {
         UISegmentedControl.appearance().selectedSegmentTintColor = UIColor(Color.registerScreenBGColor)
-        UISegmentedControl.appearance().setTitleTextAttributes([.foregroundColor: UIColor(Color.buttonBGColor)], for: .selected)
-        UISegmentedControl.appearance().setTitleTextAttributes([.foregroundColor: UIColor(Color.buttonBGColor)], for: .normal)
+        UISegmentedControl.appearance().setTitleTextAttributes(
+            [.foregroundColor: UIColor(Color.buttonBGColor)],
+            for: .selected)
+        UISegmentedControl.appearance().setTitleTextAttributes(
+            [.foregroundColor: UIColor(Color.buttonBGColor)],
+            for: .normal)
     }
-    
+
     @State private var defaultSelection: LoginType = .login
-    
+
     var body: some View {
         ZStack {
             Color.registerScreenBGColor
@@ -28,41 +32,41 @@ struct LoginHome: View {
             VStack {
                 Spacer()
                     .frame(height: 80)
-                
+
                 logoView
-                
+
                 Spacer()
                     .frame(height: 50)
-                
+
                 segmentControlView
-                
-                if (self.defaultSelection == .login) {
+
+                if self.defaultSelection == .login {
                     LoginView()
                 } else {
                     RegisterView()
                 }
-                
+
                 Spacer()
             }
         }
     }
-    
+
     var logoView: some View {
         Text("Cards")
             .font(.title)
             .foregroundColor(.buttonBGColor)
     }
-    
+
     var segmentControlView: some View {
         Picker("", selection: $defaultSelection) {
             Text(Constants.login)
                 .tag(LoginType.login)
                 .font(.titleFont)
                 .foregroundColor(Color.titleColor)
-            
+
             Text(Constants.register)
                 .tag(LoginType.register)
-            
+
             Spacer()
         }
         .pickerStyle(.segmented)

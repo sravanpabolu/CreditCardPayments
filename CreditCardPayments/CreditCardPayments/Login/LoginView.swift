@@ -9,12 +9,12 @@ import SwiftUI
 
 struct LoginView: View {
     @State var ssn: String = ""
-    
+
     var body: some View {
         VStack {
             CustomTextField(title: Constants.mpin, iconName: "lock", value: $ssn)
-            
-            CustomButton(title: Constants.btn_submit) {
+
+            CustomButton(title: Constants.btnSubmit) {
                 print("Submit tapped")
             }
         }

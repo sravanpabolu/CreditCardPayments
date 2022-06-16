@@ -10,7 +10,6 @@ import SwiftUI
 struct CustomButton: View {
     let title: String
     let buttonAction: () -> Void
-    
     var body: some View {
         Button(title, action: buttonAction)
             .font(Font.buttonTitleFont)

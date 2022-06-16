@@ -28,16 +28,16 @@ struct RegisterView: View {
     
     var registerForm: some View {
         VStack {
-            CustomTextField(title: Constants.first_name, iconName: "person", value: $firstName)
-            CustomTextField(title: Constants.last_name, iconName: "person.badge.plus", value: $lastName)
+            CustomTextField(title: Constants.firstName, iconName: "person", value: $firstName)
+            CustomTextField(title: Constants.lastName, iconName: "person.badge.plus", value: $lastName)
             CustomTextField(title: Constants.dob, iconName: "calendar", value: $dob)
             CustomTextField(title: Constants.gender, iconName: "person.fill.questionmark", value: $gender)
-            CustomTextField(title: Constants.card_details, iconName: "creditcard", value: $cardDetails)
+            CustomTextField(title: Constants.cardDetails, iconName: "creditcard", value: $cardDetails)
             CustomTextField(title: Constants.ssn, iconName: "creditcard.viewfinder", value: $ssn)
             
             CustomTextField(title: Constants.mpin, iconName: "lock", value: $ssn)
             
-            CustomButton(title: Constants.btn_submit) {
+            CustomButton(title: Constants.btnSubmit) {
                 print("Register - Submit tapped")
             }
         }
