@@ -16,16 +16,12 @@ struct DashbaordView: View {
             if #available(iOS 15.0, *) {
                 newCardView
                     .background(Color.black)
-                    .frame(maxWidth:.infinity,maxHeight: 200)
+                    .frame(maxWidth:.infinity,maxHeight: 180)
                 
-                //cardView
                 StateMentGeneratedView()
                     .frame(maxWidth:.infinity,alignment: .leading)
-                    .background(Color("veryLightGray"))
                 
-                List(0..<10){ _ in
-                    RecentTranscationsCell(price: 1000, credit: 10)
-                }
+                recentTranscation
                 
                 Spacer()
             } else {
@@ -62,7 +58,7 @@ struct DashbaordView: View {
     var newCardView : some View{
         GeometryReader{ geometry in
             VStack{
-                HStack(alignment:.top){
+                HStack(alignment:.center,spacing:10){
                     CardImage(geometry: geometry)
                     VStack(alignment:.leading,spacing: 10){
                         UserNameView(name: "Ramesh")
@@ -70,6 +66,18 @@ struct DashbaordView: View {
                         AvailableLimitView(totalLimitValue: 50000, outStandingValue: 4000)
                     }
                     Spacer(minLength: 10)
+                }
+            }
+        }
+    }
+    
+    var recentTranscation : some View{
+        List{
+            Section(header:
+                        Text("Recent Transcation")) {
+                ForEach(0..<10, id:\.self){ _ in
+                    RecentTranscationsCell(price: 1000, credit: 10)
+                        .frame(maxWidth:.infinity)
                 }
             }
         }
@@ -83,7 +91,7 @@ struct CardImage : View{
              Image("card")
                  .resizable()
                  .aspectRatio( contentMode: .fit)
-                 .frame(width: geometry.size.width*0.5, height: geometry.size.height*0.85, alignment: .leading)
+                 .frame(width: geometry.size.width*0.45, height: geometry.size.height*0.80, alignment: .leading)
          })
     }
 }
@@ -93,12 +101,12 @@ struct UserNameView : View{
     var body: some View{
         HStack{
             Text("Hello \(name)")
-                .font(.body)
+                .font(.callout)
                 .fontWeight(.light)
                 .foregroundColor(.white)
             Spacer()
             Image(systemName: "bell.badge.circle")
-                .font(.largeTitle)
+                .font(.title)
                 .foregroundColor(.white)
         }
     }
@@ -109,11 +117,11 @@ struct OutStandingView : View{
     var body: some View {
         VStack(alignment:.leading){
             Text("Total OutStanding")
-                .font(.callout)
+                .font(.footnote)
                 .foregroundColor(Color.white)
             if #available(iOS 15.0, *) {
                 Text(outStandingAmmount,format: .currency(code: "USD"))
-                    .font(.largeTitle)
+                    .font(.title2)
                     .fontWeight(.regular)
                     .foregroundColor(Color.blue)
             } else {
@@ -142,9 +150,11 @@ struct AvailableLimitView : View{
                 .frame(height: 8)
             if #available(iOS 15.0, *) {
                 HStack{
-                    Text("Available Limit")
-                    Text(totalLimitValue,format:
+                    Text("Available Limit ")
+                        .font(.caption2)
+                    + Text(totalLimitValue,format:
                                 .currency(code: "USD"))
+                        .font(.caption)
                 }
                 .font(.caption)
                 .foregroundColor(Color.white)
@@ -187,15 +197,26 @@ struct StateMentGeneratedView : View{
                         .foregroundColor(Color.black)
                 }
                 HStack{
-                    DetailsButton(buttonName: "View Details", action: {
-                        print("View details")
-                    }, titleColor: .black, backGroundColor: Color("lightGray"))
-                        .frame(maxWidth:.infinity)
+//                    DetailsButton(buttonName: "View Details", action: {
+//                        print("View details")
+//                    }, titleColor: .black, backGroundColor: Color("lightGray"))
+//                        .frame(maxWidth:.infinity)
                     
-                    DetailsButton(buttonName: "Action", action: {
-                        print("View Action")
-                    }, titleColor: .black, backGroundColor: Color.blue)
-                        .frame(maxWidth:.infinity)
+                    Button {
+                        print("View Details")
+                    } label: {
+                        Text("View Details")
+                    }
+                    .buttonStyle(MyActionButtonStyle(backGroundColor: Color("veryLightGray"), foreGroundColor: Color.black))
+
+                    Button {
+                        print("Pay Details")
+                    } label: {
+                        Text("Pay")
+                    }
+                    .buttonStyle(MyActionButtonStyle())
+                    
+                    
                     
                 }
                 .fixedSize(horizontal: false, vertical: true)
@@ -205,6 +226,25 @@ struct StateMentGeneratedView : View{
         .padding(.horizontal)
     }
 }
+
+
+//@ViewBuilder
+struct MyActionButtonStyle : ButtonStyle{
+    
+    var backGroundColor : Color = .blue
+    var foreGroundColor : Color = .white
+    
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .font(Font.callout)
+            .foregroundColor(foreGroundColor)
+            .frame(height:44)
+            .frame(maxWidth:.infinity)
+            .background(backGroundColor)
+            .cornerRadius(8)
+    }
+}
+
 
 struct DetailsButton : View{
     var buttonName : String

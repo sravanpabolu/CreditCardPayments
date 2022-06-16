@@ -19,25 +19,25 @@ struct RecentTranscationsCell: View {
                 Circle()
                     .foregroundColor(Color.white)
                     .shadow(color: Color.gray, radius: 5, x: 1, y: 1)
-                    .frame(width: 60, height: 60)
+                    .frame(width: 45, height: 45)
                     .overlay {
                         Image(systemName: "cart")
-                            .font(.title2)
+                            .font(.title3)
                     }
                 
                 VStack(alignment:.leading,spacing:8){
                     Text("FlipCart")
-                        .font(.title3)
+                        .font(.headline)
                         .foregroundColor(.black)
                         .multilineTextAlignment(.leading)
                     
                     HStack{
                         Text("14 May")
-                            .font(.callout)
+                            .font(.footnote)
                             .foregroundColor(.black)
                         
                         Text("Shoping")
-                            .font(.caption)
+                            .font(.caption2)
                             .fontWeight(.light)
                             .foregroundColor(Color.blue)
                             .lineLimit(1)
@@ -52,10 +52,10 @@ struct RecentTranscationsCell: View {
                 
                 VStack(alignment:.trailing,spacing:10){
                     Text(price,format: .currency(code: "USD"))
-                        .font(.body)
+                        .font(.callout)
                     Text("😀") +
                     Text("\(credit)")
-                        .font(.callout)
+                        .font(.caption2)
                         .foregroundColor(.green)
                 }
             }
