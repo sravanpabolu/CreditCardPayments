@@ -31,12 +31,12 @@ struct LoginHome: View {
                 .ignoresSafeArea()
             VStack {
                 Spacer()
-                    .frame(height: 80)
+                    .frame(height: 10)
 
                 logoView
 
                 Spacer()
-                    .frame(height: 50)
+                    .frame(height: 20)
 
                 segmentControlView
 

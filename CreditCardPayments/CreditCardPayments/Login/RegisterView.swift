@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-// First Name, Last Name, DOB, Gender, Card details, SSN (Masked)
 struct RegisterView: View {
     @State var firstName: String = ""
     @State var lastName: String = ""
@@ -20,14 +19,13 @@ struct RegisterView: View {
     var body: some View {
         VStack {
             registerForm
-                .padding(EdgeInsets(top: 10, leading: 50, bottom: 10, trailing: 50))
         }
         .background(Color.registerScreenBGColor)
         .ignoresSafeArea()
     }
     
     var registerForm: some View {
-        VStack {
+        Form {
             CustomTextField(title: Constants.firstName, iconName: "person", value: $firstName)
             CustomTextField(title: Constants.lastName, iconName: "person.badge.plus", value: $lastName)
             CustomTextField(title: Constants.dob, iconName: "calendar", value: $dob)
@@ -37,10 +35,15 @@ struct RegisterView: View {
             
             CustomTextField(title: Constants.mpin, iconName: "lock", value: $ssn)
             
-            CustomButton(title: Constants.btnSubmit) {
-                print("Register - Submit tapped")
+            HStack {
+                Spacer()
+                CustomButton(title: Constants.btnSubmit) {
+                    print("Register - Submit tapped")
+                }
+                Spacer()
             }
         }
+        .padding()
     }
 }
 

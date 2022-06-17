@@ -11,14 +11,20 @@ struct LoginView: View {
     @State var ssn: String = ""
 
     var body: some View {
-        VStack {
+        Form {
+            // This user should come from local
+            Text("Hello User")
+                .font(.largeTitle)
             CustomTextField(title: Constants.mpin, iconName: "lock", value: $ssn)
 
-            CustomButton(title: Constants.btnSubmit) {
-                print("Submit tapped")
+            HStack {
+                Spacer()
+                CustomButton(title: Constants.btnSubmit) {
+                    print("Login - Submit tapped")
+                }
+                Spacer()
             }
         }
-        .padding(EdgeInsets(top: 10, leading: 50, bottom: 10, trailing: 50))
         .background(Color.registerScreenBGColor)
     }
 }
