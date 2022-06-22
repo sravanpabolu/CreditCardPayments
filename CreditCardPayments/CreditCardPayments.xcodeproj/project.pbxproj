@@ -25,6 +25,8 @@
 		A08FF02F2859BEC000BA9B67 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08FF02E2859BEC000BA9B67 /* PageControl.swift */; };
 		A08FF0312859C24E00BA9B67 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08FF0302859C24E00BA9B67 /* Page.swift */; };
 		A0F038752859A8040079E888 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F038742859A8040079E888 /* OnboardingView.swift */; };
+		A0F5214F2862EC5A00782F8A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F5214E2862EC5A00782F8A /* User.swift */; };
+		A0F521522862ED0800782F8A /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F521512862ED0800782F8A /* RegisterViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		A08FF02E2859BEC000BA9B67 /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
 		A08FF0302859C24E00BA9B67 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		A0F038742859A8040079E888 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		A0F5214E2862EC5A00782F8A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A0F521512862ED0800782F8A /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		BA62775B76258DD9A30E80DA /* Pods-CreditCardPayments.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CreditCardPayments.release.xcconfig"; path = "Target Support Files/Pods-CreditCardPayments/Pods-CreditCardPayments.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,6 +134,8 @@
 		A066EF272850C2CD009D6537 /* CreditCardPayments */ = {
 			isa = PBXGroup;
 			children = (
+				A0F521502862ECFD00782F8A /* ViewModels */,
+				A0F5214D2862EC4E00782F8A /* Models */,
 				A032DE6C285BB1E7002D6B9D /* CustomViews */,
 				A032DE6B285BAA10002D6B9D /* Misc */,
 				A032DE64285B985F002D6B9D /* Extensions */,
@@ -160,6 +166,22 @@
 				A08FF0302859C24E00BA9B67 /* Page.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		A0F5214D2862EC4E00782F8A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A0F5214E2862EC5A00782F8A /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A0F521502862ECFD00782F8A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A0F521512862ED0800782F8A /* RegisterViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		DEEDDDBD710DD779C955E4C9 /* Frameworks */ = {
@@ -289,10 +311,12 @@
 				A08FF02D2859B87200BA9B67 /* PageView.swift in Sources */,
 				A032DE6A285BA9FF002D6B9D /* Constants.swift in Sources */,
 				A032DE61285B96C5002D6B9D /* LoginView.swift in Sources */,
+				A0F5214F2862EC5A00782F8A /* User.swift in Sources */,
 				A032DE72285BB2CE002D6B9D /* CustomButton.swift in Sources */,
 				A08FF02F2859BEC000BA9B67 /* PageControl.swift in Sources */,
 				A032DE68285BA46F002D6B9D /* Color.swift in Sources */,
 				A0F038752859A8040079E888 /* OnboardingView.swift in Sources */,
+				A0F521522862ED0800782F8A /* RegisterViewModel.swift in Sources */,
 				A08FF0312859C24E00BA9B67 /* Page.swift in Sources */,
 				A032DE66285B9876002D6B9D /* Font.swift in Sources */,
 				A032DE63285B9728002D6B9D /* RegisterView.swift in Sources */,
