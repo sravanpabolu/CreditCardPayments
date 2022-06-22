@@ -11,6 +11,8 @@ struct DashbaordView: View {
     
     @State var progress = 0.4
     
+    @State private var isTransactionDetailsDisplayed: Bool = false
+    
     var body: some View {
         VStack{
             if #available(iOS 15.0, *) {
@@ -22,11 +24,20 @@ struct DashbaordView: View {
                     .frame(maxWidth:.infinity,alignment: .leading)
                 
                 recentTranscation
+                    .onTapGesture {
+                        isTransactionDetailsDisplayed = true
+                    }
                 
                 Spacer()
             } else {
                 Text(TextError.shared.below15)
             }
+        }
+        
+        .sheet(isPresented: $isTransactionDetailsDisplayed) {
+            //TODO: - replace with actual transaction
+            let transaction = Transaction(description: "Flipkart", tag: "Shopping", amount: 334.89, rewardPoints: 23, transactionDate: "22-May-2022")
+            TransactionDetailView(transaction: transaction)
         }
     }
     
