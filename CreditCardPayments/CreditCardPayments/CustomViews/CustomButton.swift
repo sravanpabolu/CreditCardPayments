@@ -12,18 +12,13 @@ struct CustomButton: View {
     let buttonAction: () -> Void
     var body: some View {
         ZStack {
-            Button(title) {
-                
-            }
+            Button(title) { buttonAction() }
             .font(Font.buttonTitleFont)
             .frame(width: 200, height: 40)
             .foregroundColor(.white)
             .background(Color.buttonBGColor)
             .padding()
             .containerShape(Capsule())
-        }
-        .onTapGesture {
-            buttonAction()
         }
     }
 }
