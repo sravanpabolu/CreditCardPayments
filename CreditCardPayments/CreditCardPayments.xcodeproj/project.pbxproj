@@ -16,6 +16,9 @@
 		A0F52157286307A100782F8A /* RecentTransactions.json in Resources */ = {isa = PBXBuildFile; fileRef = A0F52156286307A100782F8A /* RecentTransactions.json */; };
 		A0F5215A286308EE00782F8A /* LocalClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F52159286308EE00782F8A /* LocalClient.swift */; };
 		A0F5215C2863091D00782F8A /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F5215B2863091D00782F8A /* Enums.swift */; };
+		A0F5215E2863192600782F8A /* TransactionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F5215D2863192600782F8A /* TransactionDetailView.swift */; };
+		A0F52161286350AC00782F8A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F52160286350AC00782F8A /* Color.swift */; };
+		A0F521632863555800782F8A /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F521622863555800782F8A /* Double.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,9 @@
 		A0F52156286307A100782F8A /* RecentTransactions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RecentTransactions.json; sourceTree = "<group>"; };
 		A0F52159286308EE00782F8A /* LocalClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalClient.swift; sourceTree = "<group>"; };
 		A0F5215B2863091D00782F8A /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		A0F5215D2863192600782F8A /* TransactionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailView.swift; sourceTree = "<group>"; };
+		A0F52160286350AC00782F8A /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		A0F521622863555800782F8A /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +53,7 @@
 			children = (
 				0D6708E62851E8EB0081B57D /* DashbaordView.swift */,
 				0DE1337D2858D0D2004E8DA1 /* RecentTranscationsCell.swift */,
+				A0F5215D2863192600782F8A /* TransactionDetailView.swift */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -70,6 +77,7 @@
 		A066EF272850C2CD009D6537 /* CreditCardPayments */ = {
 			isa = PBXGroup;
 			children = (
+				A0F5215F286350A100782F8A /* EXTN */,
 				A0F52158286308E500782F8A /* Reusable */,
 				A0F521552863077E00782F8A /* LocalJSON */,
 				A066EF282850C2CD009D6537 /* CreditCardPaymentsApp.swift */,
@@ -104,6 +112,15 @@
 				A0F5215B2863091D00782F8A /* Enums.swift */,
 			);
 			path = Reusable;
+			sourceTree = "<group>";
+		};
+		A0F5215F286350A100782F8A /* EXTN */ = {
+			isa = PBXGroup;
+			children = (
+				A0F52160286350AC00782F8A /* Color.swift */,
+				A0F521622863555800782F8A /* Double.swift */,
+			);
+			path = EXTN;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,8 +197,11 @@
 				A066EF2B2850C2CD009D6537 /* ContentView.swift in Sources */,
 				0DE1337E2858D0D2004E8DA1 /* RecentTranscationsCell.swift in Sources */,
 				0D6708E72851E8EB0081B57D /* DashbaordView.swift in Sources */,
+				A0F5215E2863192600782F8A /* TransactionDetailView.swift in Sources */,
 				A0F5215A286308EE00782F8A /* LocalClient.swift in Sources */,
+				A0F52161286350AC00782F8A /* Color.swift in Sources */,
 				A0F5215C2863091D00782F8A /* Enums.swift in Sources */,
+				A0F521632863555800782F8A /* Double.swift in Sources */,
 				A066EF292850C2CD009D6537 /* CreditCardPaymentsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
