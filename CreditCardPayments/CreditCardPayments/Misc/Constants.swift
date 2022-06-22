@@ -19,3 +19,9 @@ struct Constants {
     static let mpin = "MPIN"
     static let btnSubmit = "Submit"
 }
+
+extension Constants {
+    struct UserDefaults {
+        static let loginKey = "user_login"
+    }
+}
