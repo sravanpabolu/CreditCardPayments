@@ -13,7 +13,7 @@ class RegisterViewModel: ObservableObject {
     func saveUser() {
         let encoder = JSONEncoder()
         if let encodedUser = try? encoder.encode(user) {
-            UserDefaults.standard.set(encodedUser, forKey: Constants.UserDefaults.loginKey)
+            UserDefaults.standard.set(encodedUser, forKey: Constants.Defaults.loginKey)
             print("Save Success")
         }
     }

@@ -41,7 +41,7 @@ struct LoginHome: View {
                 segmentControlView
 
                 if self.defaultSelection == .login {
-                    LoginView()
+                    LoginView(loginViewModel: LoginViewModel())
                 } else {
                     RegisterView()
                 }

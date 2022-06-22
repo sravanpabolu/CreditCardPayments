@@ -27,6 +27,7 @@
 		A0F038752859A8040079E888 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F038742859A8040079E888 /* OnboardingView.swift */; };
 		A0F5214F2862EC5A00782F8A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F5214E2862EC5A00782F8A /* User.swift */; };
 		A0F521522862ED0800782F8A /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F521512862ED0800782F8A /* RegisterViewModel.swift */; };
+		A0F521542862F48D00782F8A /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F521532862F48D00782F8A /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		A0F038742859A8040079E888 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		A0F5214E2862EC5A00782F8A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A0F521512862ED0800782F8A /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		A0F521532862F48D00782F8A /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		BA62775B76258DD9A30E80DA /* Pods-CreditCardPayments.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CreditCardPayments.release.xcconfig"; path = "Target Support Files/Pods-CreditCardPayments/Pods-CreditCardPayments.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -180,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				A0F521512862ED0800782F8A /* RegisterViewModel.swift */,
+				A0F521532862F48D00782F8A /* LoginViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				A032DE72285BB2CE002D6B9D /* CustomButton.swift in Sources */,
 				A08FF02F2859BEC000BA9B67 /* PageControl.swift in Sources */,
 				A032DE68285BA46F002D6B9D /* Color.swift in Sources */,
+				A0F521542862F48D00782F8A /* LoginViewModel.swift in Sources */,
 				A0F038752859A8040079E888 /* OnboardingView.swift in Sources */,
 				A0F521522862ED0800782F8A /* RegisterViewModel.swift in Sources */,
 				A08FF0312859C24E00BA9B67 /* Page.swift in Sources */,

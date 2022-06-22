@@ -8,29 +8,47 @@
 import SwiftUI
 
 struct LoginView: View {
-    @State var ssn: String = ""
+    @ObservedObject var loginViewModel: LoginViewModel
+    
+    @State var mpin: String = ""
+    @State var isShowingAlert = false
 
     var body: some View {
         Form {
             // This user should come from local
-            Text("Hello User")
+            Text("Hello \(self.loginViewModel.user?.firstName ?? "User")")
                 .font(.largeTitle)
-            CustomTextField(title: Constants.mpin, iconName: "lock", value: $ssn)
+            CustomTextField(title: Constants.mpin, iconName: "lock", value: $mpin)
 
             HStack {
                 Spacer()
                 CustomButton(title: Constants.btnSubmit) {
-                    print("Login - Submit tapped")
+                    loginWithMPIN()
                 }
                 Spacer()
             }
         }
         .background(Color.registerScreenBGColor)
+        .onAppear {
+            loginViewModel.retrieveUser()
+        }
+        .alert(isPresented: $isShowingAlert) {
+            Alert(title: Text(Constants.Alert.titleAlert), message: Text(Constants.Alert.msgInvalidMPIN))
+        }
+    }
+    
+    private func loginWithMPIN() {
+        if loginViewModel.verifyLogin(with: mpin) {
+            //TODO: Navigate to proper view
+            print("User Verified")
+        } else {
+            isShowingAlert = true
+        }
     }
 }
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
+        LoginView(loginViewModel: LoginViewModel())
     }
 }

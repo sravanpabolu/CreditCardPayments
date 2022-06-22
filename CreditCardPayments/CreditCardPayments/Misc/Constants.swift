@@ -21,7 +21,14 @@ struct Constants {
 }
 
 extension Constants {
-    struct UserDefaults {
+    struct Alert {
+        static let titleAlert = "Alert"
+        static let msgInvalidMPIN = "Invalid MPIN"
+    }
+}
+
+extension Constants {
+    struct Defaults {
         static let loginKey = "user_login"
     }
 }
