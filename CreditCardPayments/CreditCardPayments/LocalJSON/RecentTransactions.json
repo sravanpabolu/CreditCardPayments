@@ -1,0 +1,36 @@
+{
+    "transactions": [
+        {
+            "description": "Flipkart",
+            "amount": 1200,
+            "reward_points": 24,
+            "transaction_date": "14-05-2022"
+            "status": "debit",
+            "tag": "Shopping"
+        },
+        {
+            "description": "MakeMyTrip",
+            "amount": 2800,
+            "reward_points": 56,
+            "transaction_date": "11-05-2022"
+            "status": "debit",
+            "tag": "Travel"
+        },
+        {
+            "description": "Paytm",
+            "amount": 4000,
+            "reward_points": 80,
+            "transaction_date": "9-05-2022"
+            "status": "debit",
+            "tag": "Pockets"
+        },
+        {
+            "description": "Cred",
+            "amount": 3000,
+            "transaction_date": "8-05-2022"
+            "status": "Credit",
+            "tag": "Repayment"
+        },
+    ]
+}
+
