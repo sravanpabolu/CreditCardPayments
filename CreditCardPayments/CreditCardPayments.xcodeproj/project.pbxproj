@@ -7,9 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D6708E72851E8EB0081B57D /* DashbaordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6708E62851E8EB0081B57D /* DashbaordView.swift */; };
+		0DE1337E2858D0D2004E8DA1 /* RecentTranscationsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE1337D2858D0D2004E8DA1 /* RecentTranscationsCell.swift */; };
 		A066EF292850C2CD009D6537 /* CreditCardPaymentsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066EF282850C2CD009D6537 /* CreditCardPaymentsApp.swift */; };
 		A066EF2D2850C2CF009D6537 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A066EF2C2850C2CF009D6537 /* Assets.xcassets */; };
 		A066EF302850C2CF009D6537 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A066EF2F2850C2CF009D6537 /* Preview Assets.xcassets */; };
+		A0F52157286307A100782F8A /* RecentTransactions.json in Resources */ = {isa = PBXBuildFile; fileRef = A0F52156286307A100782F8A /* RecentTransactions.json */; };
+		A0F5215A286308EE00782F8A /* LocalClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F52159286308EE00782F8A /* LocalClient.swift */; };
+		A0F5215C2863091D00782F8A /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F5215B2863091D00782F8A /* Enums.swift */; };
+		A0F5215E2863192600782F8A /* TransactionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F5215D2863192600782F8A /* TransactionDetailView.swift */; };
+		A0F52161286350AC00782F8A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F52160286350AC00782F8A /* Color.swift */; };
+		A0F521632863555800782F8A /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F521622863555800782F8A /* Double.swift */; };
 		A08FF02B2859B7FE00BA9B67 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08FF02A2859B7FE00BA9B67 /* PageViewController.swift */; };
 		A08FF02D2859B87200BA9B67 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08FF02C2859B87200BA9B67 /* PageView.swift */; };
 		A08FF02F2859BEC000BA9B67 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08FF02E2859BEC000BA9B67 /* PageControl.swift */; };
@@ -18,10 +26,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D6708E62851E8EB0081B57D /* DashbaordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashbaordView.swift; sourceTree = "<group>"; };
+		0DE1337D2858D0D2004E8DA1 /* RecentTranscationsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentTranscationsCell.swift; sourceTree = "<group>"; };
 		A066EF252850C2CD009D6537 /* CreditCardPayments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreditCardPayments.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A066EF282850C2CD009D6537 /* CreditCardPaymentsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardPaymentsApp.swift; sourceTree = "<group>"; };
 		A066EF2C2850C2CF009D6537 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A066EF2F2850C2CF009D6537 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A0F52156286307A100782F8A /* RecentTransactions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RecentTransactions.json; sourceTree = "<group>"; };
+		A0F52159286308EE00782F8A /* LocalClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalClient.swift; sourceTree = "<group>"; };
+		A0F5215B2863091D00782F8A /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		A0F5215D2863192600782F8A /* TransactionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailView.swift; sourceTree = "<group>"; };
+		A0F52160286350AC00782F8A /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		A0F521622863555800782F8A /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		A08FF02A2859B7FE00BA9B67 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		A08FF02C2859B87200BA9B67 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
 		A08FF02E2859BEC000BA9B67 /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
@@ -40,6 +56,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D6708E52851E8C70081B57D /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				0D6708E62851E8EB0081B57D /* DashbaordView.swift */,
+				0DE1337D2858D0D2004E8DA1 /* RecentTranscationsCell.swift */,
+				A0F5215D2863192600782F8A /* TransactionDetailView.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
 		A066EF1C2850C2CD009D6537 = {
 			isa = PBXGroup;
 			children = (
@@ -59,6 +85,12 @@
 		A066EF272850C2CD009D6537 /* CreditCardPayments */ = {
 			isa = PBXGroup;
 			children = (
+				A0F5215F286350A100782F8A /* EXTN */,
+				A0F52158286308E500782F8A /* Reusable */,
+				A0F521552863077E00782F8A /* LocalJSON */,
+				A066EF282850C2CD009D6537 /* CreditCardPaymentsApp.swift */,
+				A066EF2A2850C2CD009D6537 /* ContentView.swift */,
+				0D6708E52851E8C70081B57D /* Dashboard */,
 				A0F038732859A67A0079E888 /* Onboarding */,
 				A066EF282850C2CD009D6537 /* CreditCardPaymentsApp.swift */,
 				A066EF2C2850C2CF009D6537 /* Assets.xcassets */,
@@ -75,6 +107,30 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		A0F521552863077E00782F8A /* LocalJSON */ = {
+			isa = PBXGroup;
+			children = (
+				A0F52156286307A100782F8A /* RecentTransactions.json */,
+			);
+			path = LocalJSON;
+			sourceTree = "<group>";
+		};
+		A0F52158286308E500782F8A /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				A0F52159286308EE00782F8A /* LocalClient.swift */,
+				A0F5215B2863091D00782F8A /* Enums.swift */,
+			);
+			path = Reusable;
+			sourceTree = "<group>";
+		};
+		A0F5215F286350A100782F8A /* EXTN */ = {
+			isa = PBXGroup;
+			children = (
+				A0F52160286350AC00782F8A /* Color.swift */,
+				A0F521622863555800782F8A /* Double.swift */,
+			);
+			path = EXTN;
 		A0F038732859A67A0079E888 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +201,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0F52157286307A100782F8A /* RecentTransactions.json in Resources */,
 				A066EF302850C2CF009D6537 /* Preview Assets.xcassets in Resources */,
 				A066EF2D2850C2CF009D6537 /* Assets.xcassets in Resources */,
 			);
@@ -157,6 +214,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A066EF2B2850C2CD009D6537 /* ContentView.swift in Sources */,
+				0DE1337E2858D0D2004E8DA1 /* RecentTranscationsCell.swift in Sources */,
+				0D6708E72851E8EB0081B57D /* DashbaordView.swift in Sources */,
+				A0F5215E2863192600782F8A /* TransactionDetailView.swift in Sources */,
+				A0F5215A286308EE00782F8A /* LocalClient.swift in Sources */,
+				A0F52161286350AC00782F8A /* Color.swift in Sources */,
+				A0F5215C2863091D00782F8A /* Enums.swift in Sources */,
+				A0F521632863555800782F8A /* Double.swift in Sources */,
 				A08FF02D2859B87200BA9B67 /* PageView.swift in Sources */,
 				A08FF02F2859BEC000BA9B67 /* PageControl.swift in Sources */,
 				A0F038752859A8040079E888 /* OnboardingView.swift in Sources */,
@@ -298,6 +363,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -326,6 +392,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
