@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		03BF71F81A13D21990629576 /* Pods_CreditCardPayments.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C67A95DBD7FE935333A4FFA /* Pods_CreditCardPayments.framework */; };
-		A04A3E4428645BDE0085B4B2 /* DashbaordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04A3E2128645BDD0085B4B2 /* DashbaordView.swift */; };
+		A04A3E4428645BDE0085B4B2 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04A3E2128645BDD0085B4B2 /* DashboardView.swift */; };
 		A04A3E4528645BDE0085B4B2 /* RecentTranscationsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04A3E2228645BDD0085B4B2 /* RecentTranscationsCell.swift */; };
 		A04A3E4628645BDE0085B4B2 /* TransactionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04A3E2328645BDD0085B4B2 /* TransactionDetailView.swift */; };
 		A04A3E4728645BDE0085B4B2 /* RecentTransactions.json in Resources */ = {isa = PBXBuildFile; fileRef = A04A3E2528645BDE0085B4B2 /* RecentTransactions.json */; };
@@ -42,7 +42,7 @@
 		1E27D2F712B50452B6B39B64 /* Pods-CreditCardPayments.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CreditCardPayments.debug.xcconfig"; path = "Target Support Files/Pods-CreditCardPayments/Pods-CreditCardPayments.debug.xcconfig"; sourceTree = "<group>"; };
 		2C67A95DBD7FE935333A4FFA /* Pods_CreditCardPayments.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CreditCardPayments.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		501100EEAAA3E632ECABFFE3 /* Pods-CreditCardPayments.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CreditCardPayments.release.xcconfig"; path = "Target Support Files/Pods-CreditCardPayments/Pods-CreditCardPayments.release.xcconfig"; sourceTree = "<group>"; };
-		A04A3E2128645BDD0085B4B2 /* DashbaordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashbaordView.swift; sourceTree = "<group>"; };
+		A04A3E2128645BDD0085B4B2 /* DashboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		A04A3E2228645BDD0085B4B2 /* RecentTranscationsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentTranscationsCell.swift; sourceTree = "<group>"; };
 		A04A3E2328645BDD0085B4B2 /* TransactionDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionDetailView.swift; sourceTree = "<group>"; };
 		A04A3E2528645BDE0085B4B2 /* RecentTransactions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RecentTransactions.json; sourceTree = "<group>"; };
@@ -96,7 +96,7 @@
 		A04A3E2028645BDD0085B4B2 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
-				A04A3E2128645BDD0085B4B2 /* DashbaordView.swift */,
+				A04A3E2128645BDD0085B4B2 /* DashboardView.swift */,
 				A04A3E2228645BDD0085B4B2 /* RecentTranscationsCell.swift */,
 				A04A3E2328645BDD0085B4B2 /* TransactionDetailView.swift */,
 			);
@@ -375,7 +375,7 @@
 				A04A3E5028645BDE0085B4B2 /* Enums.swift in Sources */,
 				A04A3E5228645BDE0085B4B2 /* LoginViewModel.swift in Sources */,
 				A04A3E5728645BDE0085B4B2 /* Font.swift in Sources */,
-				A04A3E4428645BDE0085B4B2 /* DashbaordView.swift in Sources */,
+				A04A3E4428645BDE0085B4B2 /* DashboardView.swift in Sources */,
 				A04A3E5528645BDE0085B4B2 /* LoginView.swift in Sources */,
 				A04A3E4F28645BDE0085B4B2 /* User.swift in Sources */,
 				A04A3E5128645BDE0085B4B2 /* LocalClient.swift in Sources */,

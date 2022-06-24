@@ -9,17 +9,17 @@ import SwiftUI
 
 struct LoginView: View {
     @ObservedObject var loginViewModel: LoginViewModel
-
+    
     @State var mpin: String = ""
     @State var isShowingAlert = false
-
+    @State var isLoginSuccess = false
+    
     var body: some View {
         Form {
-            // This user should come from local
             Text("Hello \(self.loginViewModel.user?.firstName ?? "User")")
                 .font(.largeTitle)
             CustomTextField(title: Constants.mpin, iconName: "lock", value: $mpin)
-
+            
             HStack {
                 Spacer()
                 CustomButton(title: Constants.btnSubmit) {
@@ -35,12 +35,14 @@ struct LoginView: View {
         .alert(isPresented: $isShowingAlert) {
             Alert(title: Text(Constants.Alert.titleAlert), message: Text(Constants.Alert.msgInvalidMPIN))
         }
+        .fullScreenCover(isPresented: $isLoginSuccess) {
+            DashboardView()
+        }
     }
 
     private func loginWithMPIN() {
         if loginViewModel.verifyLogin(with: mpin) {
-            // TODO: Navigate to proper view
-            print("User Verified")
+            isLoginSuccess = true
         } else {
             isShowingAlert = true
         }

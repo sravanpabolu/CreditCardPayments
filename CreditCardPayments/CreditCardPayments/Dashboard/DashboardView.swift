@@ -1,5 +1,5 @@
 //
-//  DashbaordView.swift
+//  DashboardView.swift
 //  CreditCardPayments
 //
 //  Created by Ramesh Pedapati on 09/06/22.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct DashbaordView: View {
+struct DashboardView: View {
 
     @State var progress = 0.4
 
@@ -274,7 +274,7 @@ struct DetailsButton : View{
 struct DashbaorView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            DashbaordView()
+            DashboardView()
         }
     }
 }
