@@ -50,8 +50,11 @@ struct User: Codable {
         self.ssn = try container.decode(String.self, forKey: .ssn)
         self.mpin = try container.decode(String.self, forKey: .mpin)
     }
-    
-    init(firstName: String, lastName: String, dateOfBirth: String, gender: Gender, cardDetails: String, ssn: String, mpin: String) {
+
+    init(firstName: String, lastName: String,
+         dateOfBirth: String, gender: Gender,
+         cardDetails: String, ssn: String,
+         mpin: String) {
         self.firstName = firstName
         self.lastName = lastName
         self.dateOfBirth = dateOfBirth

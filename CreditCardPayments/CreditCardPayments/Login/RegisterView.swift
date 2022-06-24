@@ -9,7 +9,7 @@ import SwiftUI
 
 struct RegisterView: View {
     @ObservedObject private var registerViewModel = RegisterViewModel()
-    
+
     @State var firstName: String = ""
     @State var lastName: String = ""
     @State var dob: String = ""

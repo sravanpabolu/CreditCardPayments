@@ -19,7 +19,7 @@ class LoginViewModel: ObservableObject {
             user = nil
         }
     }
-    
+
     func verifyLogin(with mPIN: String) -> Bool {
         mPIN == user?.mpin ? true : false
     }

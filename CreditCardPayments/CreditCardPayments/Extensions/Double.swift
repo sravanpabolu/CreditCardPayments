@@ -9,11 +9,11 @@ import Foundation
 
 extension Double {
     func round(to decimalPlaces: Int) -> Double {
-        let precisionNumber = pow(10,Double(decimalPlaces))
-        var n = self // self is a current value of the Double that you will round
-        n = n * precisionNumber
-        n.round()
-        n = n / precisionNumber
-        return n
+        let precisionNumber = pow(10, Double(decimalPlaces))
+        var number = self // self is a current value of the Double that you will round
+        number *= precisionNumber
+        number.round()
+        number /= precisionNumber
+        return number
     }
 }
