@@ -11,11 +11,12 @@ import SwiftUI
 struct CreditCardPaymentsApp: App {
     var body: some Scene {
         WindowGroup {
+            AppHome()
 //            OnboardingView()
 //            LoginView()
 //             LoginHome()
            // ContentView()
-            DashbaordView()
+//            DashbaordView()
            // OnboardingView()
         }
     }

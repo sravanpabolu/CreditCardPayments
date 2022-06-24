@@ -35,6 +35,7 @@
 		A066EF292850C2CD009D6537 /* CreditCardPaymentsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066EF282850C2CD009D6537 /* CreditCardPaymentsApp.swift */; };
 		A066EF2D2850C2CF009D6537 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A066EF2C2850C2CF009D6537 /* Assets.xcassets */; };
 		A066EF302850C2CF009D6537 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A066EF2F2850C2CF009D6537 /* Preview Assets.xcassets */; };
+		A08C923328659F6B0018CF68 /* AppHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08C923228659F6B0018CF68 /* AppHome.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,7 @@
 		A066EF282850C2CD009D6537 /* CreditCardPaymentsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardPaymentsApp.swift; sourceTree = "<group>"; };
 		A066EF2C2850C2CF009D6537 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A066EF2F2850C2CF009D6537 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A08C923228659F6B0018CF68 /* AppHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHome.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +219,7 @@
 				A04A3E3128645BDE0085B4B2 /* Reusable */,
 				A04A3E3428645BDE0085B4B2 /* ViewModels */,
 				A066EF282850C2CD009D6537 /* CreditCardPaymentsApp.swift */,
+				A08C923228659F6B0018CF68 /* AppHome.swift */,
 				A066EF2C2850C2CF009D6537 /* Assets.xcassets */,
 				A066EF2E2850C2CF009D6537 /* Preview Content */,
 			);
@@ -367,6 +370,7 @@
 				A04A3E4928645BDE0085B4B2 /* PageViewController.swift in Sources */,
 				A04A3E5628645BDE0085B4B2 /* RegisterView.swift in Sources */,
 				A04A3E4628645BDE0085B4B2 /* TransactionDetailView.swift in Sources */,
+				A08C923328659F6B0018CF68 /* AppHome.swift in Sources */,
 				A04A3E5A28645BDE0085B4B2 /* CustomTitle.swift in Sources */,
 				A04A3E5028645BDE0085B4B2 /* Enums.swift in Sources */,
 				A04A3E5228645BDE0085B4B2 /* LoginViewModel.swift in Sources */,

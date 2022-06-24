@@ -29,6 +29,7 @@ extension Constants {
 
 extension Constants {
     struct Defaults {
+        static let isFirstLaunch = "is_first_launch"
         static let loginKey = "user_login"
     }
 }

@@ -21,6 +21,13 @@ struct LoginHome: View {
         UISegmentedControl.appearance().setTitleTextAttributes(
             [.foregroundColor: UIColor(Color.buttonBGColor)],
             for: .normal)
+
+        /// We have already come here. so we are setting false
+        let isFirstLaunch = false
+        let encoder = JSONEncoder()
+        if let encoded = try? encoder.encode(isFirstLaunch) {
+            UserDefaults.standard.set(encoded, forKey: Constants.Defaults.isFirstLaunch)
+        }
     }
 
     @State private var defaultSelection: LoginType = .login

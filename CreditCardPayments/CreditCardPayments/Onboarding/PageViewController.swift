@@ -55,6 +55,9 @@ struct PageViewController<Page: View>: UIViewControllerRepresentable {
             guard let index = controllers.firstIndex(of: viewController) else {
                 return nil
             }
+            if index == controllers.count - 1 {
+                return UIHostingController(rootView: LoginHome())
+            }
             if index + 1 == controllers.count {
                 return controllers.first
             }
