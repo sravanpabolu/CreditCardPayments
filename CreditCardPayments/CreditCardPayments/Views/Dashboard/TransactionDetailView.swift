@@ -48,11 +48,11 @@ struct TransactionDetailView: View {
                     .font(.body.bold())
                 Spacer()
                 
-                Text("\(transaction.roundedAmount)")
+                Text(" \(transaction.status == .debit ? "-" : "+")\(transaction.roundedAmount)")
                     .foregroundColor(transaction.status == .debit ? .red : .green)
                     .font(.body.bold())
                     .clipShape(Capsule())
-                    .padding(.horizontal, 25)
+                    .padding(.horizontal, 20)
                     .overlay(
                         Capsule()
                             .strokeBorder(transaction.status == .debit ? .red : .green, lineWidth: 1)
