@@ -237,7 +237,6 @@
 				1E27D2F712B50452B6B39B64 /* Pods-CreditCardPayments.debug.xcconfig */,
 				501100EEAAA3E632ECABFFE3 /* Pods-CreditCardPayments.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -252,6 +251,7 @@
 				A066EF212850C2CD009D6537 /* Sources */,
 				A066EF222850C2CD009D6537 /* Frameworks */,
 				A066EF232850C2CD009D6537 /* Resources */,
+				A0832BF028658C8A00438018 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -309,6 +309,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		A0832BF028658C8A00438018 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
 		F21AA60CA205A78866FE40B3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

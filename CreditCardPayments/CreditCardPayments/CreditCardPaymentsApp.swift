@@ -13,9 +13,9 @@ struct CreditCardPaymentsApp: App {
         WindowGroup {
 //            OnboardingView()
 //            LoginView()
-             LoginHome()
+//             LoginHome()
            // ContentView()
-//            DashbaordView()
+            DashbaordView()
            // OnboardingView()
         }
     }
