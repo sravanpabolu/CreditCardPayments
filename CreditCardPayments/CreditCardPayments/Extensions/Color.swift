@@ -24,7 +24,7 @@ extension Color {
     }
 }
 
-extension Color {
+extension ShapeStyle where Self == Color {
     static var debitCapsuleBG: Color {
         Color(red: 255/255, green: 216/255, blue: 229/255)
     }
