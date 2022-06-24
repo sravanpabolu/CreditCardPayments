@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LoginView: View {
     @ObservedObject var loginViewModel: LoginViewModel
-    
+
     @State var mpin: String = ""
     @State var isShowingAlert = false
 
@@ -36,10 +36,10 @@ struct LoginView: View {
             Alert(title: Text(Constants.Alert.titleAlert), message: Text(Constants.Alert.msgInvalidMPIN))
         }
     }
-    
+
     private func loginWithMPIN() {
         if loginViewModel.verifyLogin(with: mpin) {
-            //TODO: Navigate to proper view
+            // TODO: Navigate to proper view
             print("User Verified")
         } else {
             isShowingAlert = true

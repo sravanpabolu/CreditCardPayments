@@ -8,8 +8,8 @@
 import SwiftUI
 
 enum TransactionStatus: String {
-    case debit = "debit"
-    case credit = "credit"
+    case debit
+    case credit
 }
 
 struct Transaction {
@@ -25,7 +25,7 @@ struct Transaction {
 
 struct TransactionDetailView: View {
     let transaction: Transaction
-    
+
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
@@ -64,7 +64,7 @@ struct TransactionDetailView: View {
                         .font(.callout)
                 }
             }
-            
+
             Section(header: Text("REWARD POINTS")) {
                 HStack {
                     Image(systemName: "dollarsign")
@@ -76,7 +76,7 @@ struct TransactionDetailView: View {
                         .font(.callout)
                 }
             }
-            
+
             Spacer()
             Button {
                 print("Transaction shared")

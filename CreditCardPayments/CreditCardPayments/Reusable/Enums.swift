@@ -9,7 +9,7 @@ import Foundation
 
 enum EndPoint {
     case recentTransactions
-    
+
     func getUrl() -> URL? {
         switch self {
         case .recentTransactions:
@@ -21,7 +21,7 @@ enum EndPoint {
 enum DataFetchError: Error {
     case url, response, parsing
     case custom(description: String)
-    
+
     func errorDescription() -> String {
         switch self {
         case .url:

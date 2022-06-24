@@ -13,14 +13,14 @@ protocol DataFetchService {
 }
 
 struct LocalClient: DataFetchService {
-    func getData<T>(for endpoint: EndPoint, type: T.Type) throws -> AnyPublisher<T, Error> where T : Decodable, T : Encodable {
-     
+    func getData<T>(for endpoint: EndPoint, type: T.Type) throws -> AnyPublisher<T, Error> where T: Codable {
+
         print("Fetching from local json")
-        
+
         guard let url = endpoint.getUrl() else {
             throw DataFetchError.url
         }
-        
+
         let aPublisher = Future<T, Error> { promise in
             do {
                 let data = try Data(contentsOf: url)
@@ -30,7 +30,7 @@ struct LocalClient: DataFetchService {
                 return promise(.failure(DataFetchError.parsing))
             }
         }
-        
+
         return aPublisher.eraseToAnyPublisher()
     }
 }

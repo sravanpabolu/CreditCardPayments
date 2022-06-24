@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct RecentTranscationsCell: View {
-    
+
     @State var price = 1000
     @State var credit = 10
-    
+
     var body: some View {
-        
-        HStack(alignment: .center, spacing: 20){
+
+        HStack(alignment: .center, spacing: 20) {
             if #available(iOS 15.0, *) {
                 Circle()
                     .foregroundColor(Color.white)
@@ -24,18 +24,18 @@ struct RecentTranscationsCell: View {
                         Image(systemName: "cart")
                             .font(.title3)
                     }
-                
-                VStack(alignment:.leading,spacing:8){
+
+                VStack(alignment: .leading, spacing: 8) {
                     Text("FlipCart")
                         .font(.headline)
                         .foregroundColor(.black)
                         .multilineTextAlignment(.leading)
-                    
-                    HStack{
+
+                    HStack {
                         Text("14 May")
                             .font(.footnote)
                             .foregroundColor(.black)
-                        
+
                         Text("Shoping")
                             .font(.caption2)
                             .fontWeight(.light)
@@ -44,22 +44,20 @@ struct RecentTranscationsCell: View {
                             .padding(.horizontal)
                             .overlay {
                                 Capsule(style: .continuous)
-                                    .stroke(Color.blue,lineWidth: 1)
+                                    .stroke(Color.blue, lineWidth: 1)
                             }
                     }
                 }
-                
-                
-                VStack(alignment:.trailing,spacing:10){
-                    Text(price,format: .currency(code: "USD"))
+
+                VStack(alignment: .trailing, spacing: 10) {
+                    Text(price, format: .currency(code: "USD"))
                         .font(.callout)
                     Text("😀") +
                     Text("\(credit)")
                         .font(.caption2)
                         .foregroundColor(.green)
                 }
-            }
-            else {
+            } else {
                 Text(TextError.shared.below15)
             }
         }
@@ -72,4 +70,3 @@ struct RecentTranscationsCell_Previews: PreviewProvider {
         RecentTranscationsCell()
     }
 }
-
