@@ -35,6 +35,7 @@
 		A066EF292850C2CD009D6537 /* CreditCardPaymentsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066EF282850C2CD009D6537 /* CreditCardPaymentsApp.swift */; };
 		A066EF2D2850C2CF009D6537 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A066EF2C2850C2CF009D6537 /* Assets.xcassets */; };
 		A066EF302850C2CF009D6537 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A066EF2F2850C2CF009D6537 /* Preview Assets.xcassets */; };
+		A06F3ECD2865CE76001C5B5E /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06F3ECC2865CE76001C5B5E /* ActivityViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,7 @@
 		A066EF282850C2CD009D6537 /* CreditCardPaymentsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardPaymentsApp.swift; sourceTree = "<group>"; };
 		A066EF2C2850C2CF009D6537 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A066EF2F2850C2CF009D6537 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A06F3ECC2865CE76001C5B5E /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 				A04A3E3F28645BDE0085B4B2 /* CustomButton.swift */,
 				A04A3E4028645BDE0085B4B2 /* CustomTitle.swift */,
 				A04A3E4128645BDE0085B4B2 /* CustomTextField.swift */,
+				A06F3ECC2865CE76001C5B5E /* ActivityViewController.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -206,14 +209,11 @@
 		A066EF272850C2CD009D6537 /* CreditCardPayments */ = {
 			isa = PBXGroup;
 			children = (
-				A04A3E3E28645BDE0085B4B2 /* CustomViews */,
-				A04A3E2028645BDD0085B4B2 /* Dashboard */,
+				A06F3ECB2865C71A001C5B5E /* Views */,
 				A04A3E3B28645BDE0085B4B2 /* Extensions */,
 				A04A3E2428645BDE0085B4B2 /* LocalJSON */,
-				A04A3E3728645BDE0085B4B2 /* Login */,
 				A04A3E4228645BDE0085B4B2 /* Misc */,
 				A04A3E2F28645BDE0085B4B2 /* Models */,
-				A04A3E2628645BDE0085B4B2 /* Onboarding */,
 				A04A3E3128645BDE0085B4B2 /* Reusable */,
 				A04A3E3428645BDE0085B4B2 /* ViewModels */,
 				A066EF282850C2CD009D6537 /* CreditCardPaymentsApp.swift */,
@@ -229,6 +229,17 @@
 				A066EF2F2850C2CF009D6537 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A06F3ECB2865C71A001C5B5E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A04A3E3E28645BDE0085B4B2 /* CustomViews */,
+				A04A3E2628645BDE0085B4B2 /* Onboarding */,
+				A04A3E3728645BDE0085B4B2 /* Login */,
+				A04A3E2028645BDD0085B4B2 /* Dashboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		A714EDD5214FFC5DA114293B /* Pods */ = {
@@ -364,6 +375,7 @@
 				A04A3E5328645BDE0085B4B2 /* RegisterViewModel.swift in Sources */,
 				A04A3E4B28645BDE0085B4B2 /* Page.swift in Sources */,
 				A04A3E4528645BDE0085B4B2 /* RecentTranscationsCell.swift in Sources */,
+				A06F3ECD2865CE76001C5B5E /* ActivityViewController.swift in Sources */,
 				A04A3E4928645BDE0085B4B2 /* PageViewController.swift in Sources */,
 				A04A3E5628645BDE0085B4B2 /* RegisterView.swift in Sources */,
 				A04A3E4628645BDE0085B4B2 /* TransactionDetailView.swift in Sources */,
