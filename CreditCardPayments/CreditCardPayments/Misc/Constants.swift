@@ -30,12 +30,13 @@ extension Constants {
 extension Constants {
     struct Alert {
         static let titleAlert = "Alert"
-        static let msgInvalidMPIN = "Invalid MPIN"
+        static let msgInvalidMPIN = "Invalid MPIN. Please register, if you have not registered before"
     }
 }
 
 extension Constants {
     struct Defaults {
+        static let isFirstLaunch = "is_first_launch"
         static let loginKey = "user_login"
     }
 }
