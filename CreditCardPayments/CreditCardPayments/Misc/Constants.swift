@@ -21,6 +21,13 @@ struct Constants {
 }
 
 extension Constants {
+    struct TransactionDetailView {
+        static let rewardPoints = "REWARD POINTS"
+        static let paymentDetails = "PAYMENT DETAILS"
+    }
+}
+
+extension Constants {
     struct Alert {
         static let titleAlert = "Alert"
         static let msgInvalidMPIN = "Invalid MPIN. Please register, if you have not registered before"
