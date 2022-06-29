@@ -12,7 +12,7 @@ struct Transaction {
         case debit
         case credit
     }
-    
+
     let description, tag: String
     let status: TransactionStatus = .debit
     let amount: Double
@@ -27,7 +27,7 @@ struct TransactionDetailView: View {
     let transaction: Transaction
 
     @State var showShareSheet = false
-    
+
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
@@ -42,12 +42,12 @@ struct TransactionDetailView: View {
                 Spacer()
             }
             .padding(.vertical)
-            
+
             HStack {
                 Text(transaction.description)
                     .font(.body.bold())
                 Spacer()
-                
+
                 Text(" \(transaction.status == .debit ? "-" : "+")\(transaction.roundedAmount)")
                     .foregroundColor(transaction.status == .debit ? .red : .green)
                     .font(.body.bold())
@@ -58,9 +58,9 @@ struct TransactionDetailView: View {
                             .strokeBorder(transaction.status == .debit ? .red : .green, lineWidth: 1)
                     )
             }
-            
+
             Divider()
-            
+
             VStack(alignment: .leading) {
                 Section(header: Text(Constants.TransactionDetailView.paymentDetails)
                     .font(.title3.bold())
@@ -75,9 +75,9 @@ struct TransactionDetailView: View {
                             .font(.body)
                     }
                 }
-                
+
                 Divider()
-                
+
                 Section(header: Text(Constants.TransactionDetailView.rewardPoints)
                     .font(.title3.bold())
                 ) {
@@ -98,7 +98,7 @@ struct TransactionDetailView: View {
         .padding(.horizontal)
         .padding()
     }
-    
+
     func shareSheet(url: String) {
         let url = URL(string: url)
         let activityView = UIActivityViewController(activityItems: [url!], applicationActivities: nil)

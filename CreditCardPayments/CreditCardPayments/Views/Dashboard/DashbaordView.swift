@@ -35,7 +35,6 @@ struct DashboardView: View {
         }
 
         .sheet(isPresented: $isTransactionDetailsDisplayed) {
-            // TODO: - replace with actual transaction
             let transaction = Transaction(
                 description: "Flipkart", tag: "Shopping",
                 amount: 334.89, rewardPoints: 23,
@@ -44,7 +43,7 @@ struct DashboardView: View {
         }
     }
 
-    var cardView : some View {
+    var cardView: some View {
         VStack {
             if #available(iOS 15.0, *) {
                 GeometryReader { geometry in
@@ -69,7 +68,7 @@ struct DashboardView: View {
         }
     }
 
-    var newCardView : some View {
+    var newCardView: some View {
         GeometryReader { geometry in
             VStack {
                 HStack(alignment: .center, spacing: 10) {
@@ -129,12 +128,12 @@ struct UserNameView: View {
 struct OutStandingView: View {
     var outStandingAmmount = 4000
     var body: some View {
-        VStack(alignment:.leading) {
+        VStack(alignment: .leading) {
             Text("Total OutStanding")
                 .font(.footnote)
                 .foregroundColor(Color.white)
             if #available(iOS 15.0, *) {
-                Text(outStandingAmmount,format: .currency(code: "USD"))
+                Text(outStandingAmmount, format: .currency(code: "USD"))
                     .font(.title2)
                     .fontWeight(.regular)
                     .foregroundColor(Color.blue)
@@ -182,9 +181,9 @@ struct AvailableLimitView: View {
     }
 }
 
-struct StateMentGeneratedView : View {
+struct StateMentGeneratedView: View {
     var body: some View {
-        HStack(alignment:.top) {
+        HStack(alignment: .top) {
             if #available(iOS 15.0, *) {
                 Image(systemName: "list.bullet.rectangle.portrait")
                     .font(.title2)
@@ -196,7 +195,7 @@ struct StateMentGeneratedView : View {
                 Text(TextError.shared.below15)
             }
             
-            VStack(alignment:.leading) {
+            VStack(alignment: .leading) {
                 Text("Statement Not Generated")
                     .font(.body)
                     .fontWeight(.semibold)
@@ -212,7 +211,7 @@ struct StateMentGeneratedView : View {
 //                    DetailsButton(buttonName: "View Details", action: {
 //                        print("View details")
 //                    }, titleColor: .black, backGroundColor: Color("lightGray"))
-//                        .frame(maxWidth:.infinity)
+//                        .frame(maxWidth: .infinity)
 
                     Button {
                         print("View Details")
@@ -240,29 +239,29 @@ struct StateMentGeneratedView : View {
 }
 
 //@ViewBuilder
-struct MyActionButtonStyle : ButtonStyle{
+struct MyActionButtonStyle: ButtonStyle{
 
-    var backGroundColor : Color = .blue
-    var foreGroundColor : Color = .white
+    var backGroundColor: Color = .blue
+    var foreGroundColor: Color = .white
 
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .font(Font.callout)
             .foregroundColor(foreGroundColor)
-            .frame(height:44)
-            .frame(maxWidth:.infinity)
+            .frame(height: 44)
+            .frame(maxWidth: .infinity)
             .background(backGroundColor)
             .cornerRadius(8)
     }
 }
 
-struct DetailsButton : View{
-    var buttonName : String
-    var action : () -> Void
-    var titleColor : Color
-    var backGroundColor : Color
+struct DetailsButton: View {
+    var buttonName: String
+    var action: () -> Void
+    var titleColor: Color
+    var backGroundColor: Color
 
-    var body: some View{
+    var body: some View {
         Button(buttonName, action: action)
             .padding()
             .foregroundColor(titleColor)

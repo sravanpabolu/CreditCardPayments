@@ -12,6 +12,7 @@ struct CreditCardPaymentsApp: App {
     var body: some Scene {
         WindowGroup {
             AppHome()
+//            CardControlsView()
         }
     }
 }

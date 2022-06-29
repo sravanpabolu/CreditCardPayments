@@ -9,17 +9,17 @@ import SwiftUI
 
 struct LoginView: View {
     @ObservedObject var loginViewModel: LoginViewModel
-    
+
     @State var mpin: String = ""
     @State var isShowingAlert = false
     @State var isLoginSuccess = false
-    
+
     var body: some View {
         Form {
             Text("Hello \(self.loginViewModel.user?.firstName ?? "User")")
                 .font(.largeTitle)
             CustomTextField(title: Constants.mpin, iconName: "lock", value: $mpin)
-            
+
             HStack {
                 Spacer()
                 CustomButton(title: Constants.btnSubmit) {

@@ -24,7 +24,7 @@ extension Constants {
     struct NavigationTitles {
         static let cardControls = "Card Controls"
     }
-    
+
     struct Labels {
         static let lockCard             = "Lock Card"
         static let internationalUsage   = "International Usage"
@@ -34,7 +34,7 @@ extension Constants {
         static let atmWithdrawal        = "ATM Withdrawal"
         static let resetPin             = "Reset PIN"
     }
-    
+
     struct Images {
         static let creditCardControls   = "credit-card"
         static let lockCard             = "creditcard"
@@ -44,7 +44,7 @@ extension Constants {
         static let domesticTransaction  = "printer"
         static let atmWithdrawal        = "faxmachine"
     }
-    
+
     struct ButtonTitles {
         static let resetPin             = "Reset"
     }

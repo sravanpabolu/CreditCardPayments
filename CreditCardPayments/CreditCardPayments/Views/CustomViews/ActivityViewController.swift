@@ -8,7 +8,7 @@
 import UIKit
 import SwiftUI
 
-//func shareSheet(url: String) {
+// func shareSheet(url: String) {
 //    let url = URL(string: url)
 //    let activityView = UIActivityViewController(activityItems: [url!], applicationActivities: nil)
 //
@@ -19,7 +19,7 @@ import SwiftUI
 //        windowScene.keyWindow?.rootViewController?.present(activityView, animated: true, completion: nil)
 //    }
 //
-//}
+// }
 
 // 1. Activity View
 struct ActivityView: UIViewControllerRepresentable {
@@ -29,5 +29,7 @@ struct ActivityView: UIViewControllerRepresentable {
         return UIActivityViewController(activityItems: [text], applicationActivities: nil)
     }
 
-    func updateUIViewController(_ uiViewController: UIActivityViewController, context: UIViewControllerRepresentableContext<ActivityView>) {}
+    func updateUIViewController(_
+                                uiViewController: UIActivityViewController,
+                                context: UIViewControllerRepresentableContext<ActivityView>) {}
 }
