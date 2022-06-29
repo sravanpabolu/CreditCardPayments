@@ -21,6 +21,36 @@ struct Constants {
 }
 
 extension Constants {
+    struct NavigationTitles {
+        static let cardControls = "Card Controls"
+    }
+    
+    struct Labels {
+        static let lockCard             = "Lock Card"
+        static let internationalUsage   = "International Usage"
+        static let onlineTransactions   = "Online Transactions"
+        static let contactLessPayment   = "Contactless Payments"
+        static let domesticTransaction  = "Domestic Transactions"
+        static let atmWithdrawal        = "ATM Withdrawal"
+        static let resetPin             = "Reset PIN"
+    }
+    
+    struct Images {
+        static let creditCardControls   = "credit-card"
+        static let lockCard             = "creditcard"
+        static let internationalUsage   = "globe"
+        static let onlineTransactions   = "newspaper"
+        static let contactLessPayment   = "wifi"
+        static let domesticTransaction  = "printer"
+        static let atmWithdrawal        = "faxmachine"
+    }
+    
+    struct ButtonTitles {
+        static let resetPin             = "Reset"
+    }
+}
+
+extension Constants {
     struct TransactionDetailView {
         static let rewardPoints = "REWARD POINTS"
         static let paymentDetails = "PAYMENT DETAILS"
