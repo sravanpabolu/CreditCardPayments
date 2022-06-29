@@ -36,7 +36,6 @@
 		A066EF292850C2CD009D6537 /* CreditCardPaymentsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066EF282850C2CD009D6537 /* CreditCardPaymentsApp.swift */; };
 		A066EF2D2850C2CF009D6537 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A066EF2C2850C2CF009D6537 /* Assets.xcassets */; };
 		A066EF302850C2CF009D6537 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A066EF2F2850C2CF009D6537 /* Preview Assets.xcassets */; };
-		A06F3ECD2865CE76001C5B5E /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06F3ECC2865CE76001C5B5E /* ActivityViewController.swift */; };
 		A08C923328659F6B0018CF68 /* AppHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08C923228659F6B0018CF68 /* AppHome.swift */; };
 /* End PBXBuildFile section */
 
@@ -73,7 +72,6 @@
 		A066EF282850C2CD009D6537 /* CreditCardPaymentsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardPaymentsApp.swift; sourceTree = "<group>"; };
 		A066EF2C2850C2CF009D6537 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A066EF2F2850C2CF009D6537 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A06F3ECC2865CE76001C5B5E /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		A08C923228659F6B0018CF68 /* AppHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHome.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -187,7 +185,6 @@
 				A04A3E3F28645BDE0085B4B2 /* CustomButton.swift */,
 				A04A3E4028645BDE0085B4B2 /* CustomTitle.swift */,
 				A04A3E4128645BDE0085B4B2 /* CustomTextField.swift */,
-				A06F3ECC2865CE76001C5B5E /* ActivityViewController.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -390,7 +387,6 @@
 				A04A3E4B28645BDE0085B4B2 /* Page.swift in Sources */,
 				A01DAFD3286AC70700EB2F1B /* DashbaordView.swift in Sources */,
 				A04A3E4528645BDE0085B4B2 /* RecentTranscationsCell.swift in Sources */,
-				A06F3ECD2865CE76001C5B5E /* ActivityViewController.swift in Sources */,
 				A04A3E4928645BDE0085B4B2 /* PageViewController.swift in Sources */,
 				A04A3E5628645BDE0085B4B2 /* RegisterView.swift in Sources */,
 				A04A3E4628645BDE0085B4B2 /* TransactionDetailView.swift in Sources */,
