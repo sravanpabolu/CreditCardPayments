@@ -41,3 +41,10 @@ extension ShapeStyle where Self == Color {
         Color(red: 212/255, green: 175/255, blue: 55/255)
     }
 }
+
+// Card Controls Screen
+extension ShapeStyle where Self == Color {
+    static var cardControlItemInactive: Color {
+        Color(red: 244/255, green: 244/255, blue: 244/255)
+    }
+}
