@@ -39,18 +39,14 @@ struct LoginHome: View {
             VStack {
                 Spacer()
                     .frame(height: 10)
-
                 logoView
-
                 Spacer()
                     .frame(height: 20)
-
                 segmentControlView
-
                 if self.defaultSelection == .login {
                     LoginView(loginViewModel: LoginViewModel())
                 } else {
-                    RegisterView()
+                    RegisterView(defaultSelection: $defaultSelection)
                 }
 
                 Spacer()

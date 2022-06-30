@@ -9,6 +9,7 @@ import SwiftUI
 
 struct RegisterView: View {
     @ObservedObject private var registerViewModel = RegisterViewModel()
+    @Binding var defaultSelection: LoginType
 
     @State var firstName: String = ""
     @State var lastName: String = ""
@@ -42,6 +43,7 @@ struct RegisterView: View {
                 CustomButton(title: Constants.btnSubmit) {
                     print("Register - Submit tapped")
                     registerUser()
+                    defaultSelection = .login
                 }
                 Spacer()
             }
@@ -64,7 +66,8 @@ struct RegisterView: View {
 }
 
 struct RegisterView_Previews: PreviewProvider {
+    @State static var loginType = LoginType.register
     static var previews: some View {
-        RegisterView()
+        RegisterView(defaultSelection: $loginType)
     }
 }
